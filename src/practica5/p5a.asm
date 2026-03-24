@@ -8,7 +8,8 @@ _start:
 	mov edx, msg		; edx = dirección de la cadena msg
 	call puts			; imprime cadena msg terminada en valor nulo (0)
 
-    mov edx, 'z'
+    mov eax, msg
+    mov byte [msg], 0x7A
     call puts
 
 	mov	eax, 1	    	; seleccionar llamada al sistema para fin de programa
