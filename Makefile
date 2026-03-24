@@ -1,7 +1,7 @@
-nothing:
-   echo "nada"
+nothing: 
+	echo "nada"
 salvar:
-   git status
-   git add .
-   git commit -m "Salvar cambios"
-   git push
+	git status
+	git add .
+	git commit -m "salvar cambios"
+	git push
