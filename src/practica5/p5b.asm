@@ -13,7 +13,6 @@ _start:
 	mov ecx, 23
 
 	mov byte [msg+ecx], 0x58
-	
 	call puts
 
 	mov	eax, 1	    	; seleccionar llamada al sistema para fin de programa
