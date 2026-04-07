@@ -9,12 +9,10 @@ _start:
 	call puts			; imprime cadena msg terminada en valor nulo (0)
 
     mov ebx, msg
-
-	mov eax, ebx
     
 	mov ecx, 23
 
-	mov byte [eax+ecx], 0x58
+	mov byte [msg+ecx], 0x58
 	call puts
 
 	mov	eax, 1	    	; seleccionar llamada al sistema para fin de programa
